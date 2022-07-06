@@ -89,7 +89,7 @@ def index(request):
 
             url=url+i+"="+str(params.get(i))+"&"
 
-        url=url+"site=stackoverflow&key=Wrei83PnIr8HCCWKjK1cQA(("
+        url=url+"site=stackoverflow"
         if(Link.objects.filter(url=url).exists()):
             print("Query Already Made")
             return redirect(index)
